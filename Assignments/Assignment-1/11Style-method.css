@@ -1,0 +1,19 @@
+section{
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+} 
+ 
+ 
+ 
+ .third h1{
+            color:blue;
+            text-align: center;
+        }
+        .third p{
+            font-size: 20px;
+            font-family: 'Times New Roman', serif;
+            color: purple;
+            text-align: center;
+        }

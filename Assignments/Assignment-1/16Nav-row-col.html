@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Inline and Block</title>
+    <style>
+         body {
+            background-color: gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: rgb(221, 136, 57);
+
+
+        }
+
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+            margin-left: auto;
+            padding-right: 80px;
+            padding-top: 10px;
+
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .nav-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            margin-top: 0px;
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+
+
+
+        .navbar1{
+            background-color: rgb(192, 147, 62);
+            width:200px;
+           
+            justify-content: left;
+            height:400px;
+            margin: 10px;
+            padding:10px;
+            margin-top:8px;
+            
+
+        }
+        .li1{
+            margin-top: 40px;
+            margin-bottom: 40px;
+           list-style-type: none;
+        }
+        .li1 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+      .li1 a:hover {
+            text-decoration: underline;
+        }
+        
+  
+    </style>
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <div>
+                <h1 class="logo">My Website</h1>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="navbar1">
+            <div>
+                <h1 class="logo">My Website</h1>
+            </div>
+            <ul class="nav1-list">
+                <li class="li1"><a href="#home">Home</a></li>
+                <li class="li1"><a href="#about">About</a></li>
+                <li class="li1"><a href="#service">Service</a></li>
+                <li class="li1"><a href="#portfolio">Portfolio</a></li>
+                <li class="li1"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

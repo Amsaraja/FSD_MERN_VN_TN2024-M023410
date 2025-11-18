@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* Sidebar | Main | Widget */
+            grid-template-rows: 80px auto 60px;  /* Header | Content | Footer */
+            height: 100vh;
+        }
+
+        /* Full-width header */
+        .header {
+            grid-column: 1 / 4;
+            background: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .sidebar {
+            background: #f0f0f0;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .main {
+            background: #ffffff;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .widgets {
+            background: #fafafa;
+            padding: 20px;
+        }
+
+        /* Full-width footer */
+        .footer {
+            grid-column: 1 / 4;
+            background: #222;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="header">HEADER</div>
+
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Navigation links or menu items go here.</p>
+        </div>
+
+        <div class="main">
+            <h2>Main Content Area</h2>
+            <p>This is the central section of the dashboard.</p>
+        </div>
+
+        <div class="widgets">
+            <h3>Widget Panel</h3>
+            <p>Widgets, stats, and quick tools can be placed here.</p>
+        </div>
+
+        <div class="footer">FOOTER</div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and Absolute Positioning</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .box-container {
+            margin-top: 40px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            position: relative;
+           
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: #444;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: #007bff;
+        }
+
+        .absolute-box {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #28a745;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background: #dc3545;
+        }
+
+        .static-box {
+            background: gray;
+        }
+
+        .fixed-note {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: orange;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+   
+        <div class="box-container">
+            <div class="box static-box">Static</div>
+            <div class="box relative-box">Relative</div>
+            <div class="box absolute-box">Absolute</div>
+        </div>
+         
+        <div class="main">
+        <h1>Relative, Fixed, Static, Absolute Positioning</h1>
+        <p>Scroll to observe how the acts compared to a fixed element.</p>
+
+
+        <h2> Scroll How its works.</h2>
+        <p>Scroll down and how its acts like fixed and other then relative, absolute, static positioning </p>
+        <h1>This is the first heading</h1>
+        <h1>This is the second heading</h1>
+        <h1>This is the third heading</h1>
+        <h1>This is the fourth heading</h1>
+        <h1>This is the fifth heading</h1>
+        <h1>This is the sixth heading</h1>
+        <h1>This is the seventh heading</h1>
+        <h1>This is the eighth heading</h1>
+        <h1>This is the ninth heading</h1>
+        <h1>This is the tenth heading</h1>
+        </div>
+        
+        <div class="box fixed-box">Fixed</div>
+        <div class="fixed-note">Call Us</div>
+
+</body>
+
+</html>

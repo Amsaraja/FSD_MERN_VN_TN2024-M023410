@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            border: 2px solid rgb(34, 33, 33);
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: #75C757;
+            background: linear-gradient(235deg, rgba(0, 0, 0, 1) 0%, rgba(117, 199, 87, 1) 6%, rgba(237, 221, 83, 1) 100%);
+        }
+
+        .in {
+            margin: auto;
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 95%;
+            margin-top: 4px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .rad {
+            margin-left: 30px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rgistration Form</h1>
+    <form action="">
+        <label for="name">User Name: </label><br>
+        <input type="text" id="name" name="name" class="in" placeholder="Enter Your Username"><br>
+        <label for="email">Email: </label><br>
+        <input type="email" id="email" name="email" class="in" placeholder="Enter Your Email"><br>
+        <label for="password">Password: </label><br>
+        <input type="password" id="password" name="password" class="in" placeholder="Enter Your Password"><br>
+        <label for="dob">Date Of Birth: </label><br>
+        <input type="date" id="dob" name="dob" class="in"><br>
+        <label for="gender">Gender: </label><br>
+        <input type="radio" name="gender" value="male" class="rad"> Male
+        <input type="radio" name="gender" value="female" class="rad"> Female <br>
+        <label for="country">Country: </label><br>
+        <select id="country" name="country" class="in">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="sri lanka">Sri Lanka</option>
+        </select><br>
+        <input type="checkbox" id="termscon" name="termscon">
+        <label for="termscon">Terms and Condition</label><br>
+        <input type="submit" value="Register" class="in">
+    </form>
+</body>
+
+</html>

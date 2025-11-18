@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Default: 4 cards per row */
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Medium screens (3 per row) */
+        @media (max-width: 1200px) {
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Small screens (2 per row) */
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile (1 per row) */
+        @media (max-width: 480px) {
+            .card-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Card Grid</h1>
+
+    <div class="card-grid">
+        <div class="card"><h3>Card 1</h3><p>This is card content.</p></div>
+        <div class="card"><h3>Card 2</h3><p>This is card content.</p></div>
+        <div class="card"><h3>Card 3</h3><p>This is card content.</p></div>
+        <div class="card"><h3>Card 4</h3><p>This is card content.</p></div>
+        <div class="card"><h3>Card 5</h3><p>This is card content.</p></div>
+        <div class="card"><h3>Card 6</h3><p>This is card content.</p></div>
+        <div class="card"><h3>Card 7</h3><p>This is card content.</p></div>
+        <div class="card"><h3>Card 8</h3><p>This is card content.</p></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #333; /* Default background (desktop) */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex; /* Horizontal layout by default */
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            display: block;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+            border-radius: 5px;
+        }
+
+        /* ----------------------------
+           MOBILE (≤768px)
+           ---------------------------- */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column; /* Vertical layout */
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            nav {
+                background: #444; /* Slightly different for mobile if needed */
+            }
+        }
+
+        /* ----------------------------
+           MEDIUM SCREENS (768px–1024px)
+           Change background color
+           ---------------------------- */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            nav {
+                background: #0066cc; /* Medium breakpoint color */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

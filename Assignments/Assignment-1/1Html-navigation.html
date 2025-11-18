@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Navigation</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: aquamarine;
+
+
+        }
+
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+            margin-left: auto;
+            padding-right: 80px;
+            padding-top: 10px;
+
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .nav-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            margin-top: 0px;
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h1 class="logo">My Website</h1>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="home">
+            <h1>Home</h1>
+            <p>Welcome to my website. This is the home section.</p>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <p>This section contains information about us.</p>
+        </section>
+        <section id="service">
+            <h1>Service</h1>
+            <p>Details about the services we offer can be found here.</p>
+        </section>
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <p>Check out our previous work in this section.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Get in touch with us through this section.</p>
+        </section>
+    </div>
+
+
+</body>
+
+</html>

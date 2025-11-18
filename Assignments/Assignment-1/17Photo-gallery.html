@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Photo Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+      
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            width: calc(33.33% - 20px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+       
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Photo Gallery</h1>
+
+    <div class="gallery">
+
+        <a class="gallery-item" href="https://en.wikipedia.org/wiki/Tiger" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tiger">
+        </a>
+
+        <a class="gallery-item" href="https://en.wikipedia.org/wiki/Eiffel_Tower" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Eiffel Tower">
+        </a>
+
+        <a class="gallery-item" href="https://en.wikipedia.org/wiki/Mona_Lisa" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Mona_Lisa.jpg" alt="Mona Lisa">
+        </a>
+
+        <a class="gallery-item" href="https://en.wikipedia.org/wiki/Earth" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
+        </a>
+
+        <a class="gallery-item" href="https://en.wikipedia.org/wiki/Mount_Everest" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg" alt="Mount Everest">
+        </a>
+
+        <a class="gallery-item" href="https://en.wikipedia.org/wiki/Great_Wall_of_China" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/20090529_Great_Wall_8185.jpg" alt="Great Wall of China">
+        </a>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <style>
+        table{
+            border:solid 1px black;
+            border-collapse:collapse;
+        }
+        th,td{
+            border:solid 1px black;
+           padding: 10px;
+           
+
+        }
+        .details{
+            color:blue;
+            cursor:pointer;
+        }
+        .details:hover{
+            text-decoration:underline;
+        }
+        thead{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Product Data Table </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Bluetooth Speaker</td>
+                <td>Electronics</td>
+                <td>Rs.2000</td>
+                <td>In Stock</td>
+                <td class="details">View/Edit</td>
+            </tr>
+            <tr>
+                <td>Shoes</td>
+                <td>Footwear</td>
+                <td>Rs.1500</td>
+                <td>Low Stock</td>
+                <td class="details">View/Edit</td>
+            </tr>
+            <tr>
+                <td>Mens Watches</td>
+                <td>Accessories</td>
+                <td>Rs.3000</td>
+                <td>Out of Stock</td>
+                <td class="details">View/Edit</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>Electronics</td>
+                <td>Rs.500000</td>
+                <td>In Stock</td>
+                <td class="details">View/Edit</td>
+            </tr>
+        
+    </table>
+</body>
+</html>
