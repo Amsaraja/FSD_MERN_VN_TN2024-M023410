@@ -1,0 +1,5 @@
+[
+  { "name": "Alice Johnson", "dept": "Computer Science", "year": "2" },
+  { "name": "Bob Smith", "dept": "Electronics", "year": "3" },
+  { "name": "Charlie Lee", "dept": "Mechanical", "year": "1" }
+]
