@@ -1,0 +1,56 @@
+[
+{
+"id": "cse",
+"name": "Computer Science Engineering",
+"description": "The CSE department focuses on software, algorithms, and computing.",
+"fullDescription": "The Computer Science & Engineering department offers undergraduate and postgraduate programs focused on software engineering, algorithms, distributed systems, and AI.",
+"courses": ["Data Structures & Algorithms","Operating Systems","Database Systems","Machine Learning"],
+"faculty": ["Dr. Kumar","Dr. Meena","Prof. Singh"],
+"labs": ["Programming Lab","AI Lab","Networks Lab"]
+},
+{
+"id": "it",
+"name": "Information Technology",
+"description": "IT focuses on application development, web, and networks.",
+"fullDescription": "Information Technology trains students in software applications, web technologies, networking, and cybersecurity.",
+"courses": ["Web Technologies","Network Security","Cloud Computing"],
+"faculty": ["Dr. Rao","Dr. Iyer"],
+"labs": ["Network Lab","Cloud Lab"]
+},
+{
+"id": "ece",
+"name": "Electronics & Communication",
+"description": "ECE handles electronics, signal processing, and communication.",
+"fullDescription": "Electronics & Communication Engineering covers circuits, signal processing, embedded systems, and wireless communication.",
+"courses": ["Analog Circuits","Digital Signal Processing","Embedded Systems"],
+"faculty": ["Dr. Nair","Prof. Chandra"],
+"labs": ["Circuits Lab","Embedded Systems Lab"]
+},
+{
+"id": "mech",
+"name": "Mechanical Engineering",
+"description": "Mechanical focuses on design, thermodynamics and manufacturing.",
+"fullDescription": "Mechanical Engineering includes thermodynamics, CAD, manufacturing processes and design engineering.",
+"courses": ["Thermodynamics","Mechanics","CAD"],
+"faculty": ["Dr. Verma","Prof. Ahuja"],
+"labs": ["Mechanics Lab","CAD Lab"]
+},
+{
+"id": "civil",
+"name": "Civil Engineering",
+"description": "Civil engineering centres around the design, construction & maintenance of infrastructure.",
+"fullDescription": "Civil Engineering covers structural analysis, fluid mechanics, construction methodology and geotechnics.",
+"courses": ["Structural Analysis","Hydraulics","Geotechnical Engineering"],
+"faculty": ["Dr. Sharma","Prof. Gupta"],
+"labs": ["Materials Lab","Survey Lab"]
+},
+{
+"id": "mba",
+"name": "Master of Business Administration",
+"description": "MBA focuses on management, finance and entrepreneurship.",
+"fullDescription": "The MBA program emphasizes strategy, finance, marketing, operations and entrepreneurship.",
+"courses": ["Marketing","Finance","Operations Management"],
+"faculty": ["Dr. Roy","Prof. Banerjee"],
+"labs": ["Management Lab","Finance Lab"]
+}
+]
